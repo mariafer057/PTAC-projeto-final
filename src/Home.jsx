@@ -1,4 +1,5 @@
 import Cabecalho from '../componentes/cabecalho';
+import "./home.css"
 export default function Home(){
     return(
         <div>
