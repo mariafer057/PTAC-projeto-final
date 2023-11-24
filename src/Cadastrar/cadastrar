@@ -1,4 +1,4 @@
-export default function ToDo() {
+export default function Cadastrar() {
     const listaLocalStorage = JSON.parse(localStorage.getItem("Lista"));
     const [lista, setLista ] = useState(listaLocalStorage   || []);
    const [tipo, setTipo ] = useState("");
