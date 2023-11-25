@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+/*import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 export default function Cadastrar() {
@@ -29,5 +29,5 @@ export default function Cadastrar() {
         setPreco("");
         setImagem("");
         console.log(id)
-    };
+    };/*
 //pegando do anterior
