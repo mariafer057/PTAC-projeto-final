@@ -1,3 +1,4 @@
+import Detalhe from './Detalhe/Detalhe';
 export default function Cadastrar() {
     const listaLocalStorage = JSON.parse(localStorage.getItem("Lista"));
     const [lista, setLista ] = useState(listaLocalStorage   || []);
