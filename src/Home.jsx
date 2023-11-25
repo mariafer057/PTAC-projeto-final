@@ -1,4 +1,4 @@
-import Cabecalho from '../componentes/cabecalho';
+import Cabecalho from './componentes/cabecalho';
 import "./home.css"
 export default function Home(){
     return(
@@ -7,6 +7,7 @@ export default function Home(){
 
      <h1>PTAC 2 - PROJETO FINAL</h1>
    
+     <h1>{videos}</h1>
         </div>
    
      );

@@ -1,4 +1,6 @@
-import Detalhe from './Detalhe/Detalhe';
+import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+
 export default function Cadastrar() {
     const listaLocalStorage = JSON.parse(localStorage.getItem("Lista"));
     const [lista, setLista ] = useState(listaLocalStorage   || []);
@@ -28,3 +30,4 @@ export default function Cadastrar() {
         setImagem("");
         console.log(id)
     };
+//pegando do anterior

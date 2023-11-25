@@ -1,5 +1,5 @@
-import { useParams } from "react-router-dom";
-import Cadastrar from "../Cadastrar/cadastrar";
+/*import { useParams } from "react-router-dom";
+
 
 export default function Detalhe(){
     const {id} = useParams();
@@ -18,3 +18,7 @@ export default function Detalhe(){
        <Card ativ={ativ[0]}></Card>
     );
 }
+*/
+
+
+//ADD OS COMENTS PQ TA DANDO ERRO
