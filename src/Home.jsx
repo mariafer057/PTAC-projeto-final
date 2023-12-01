@@ -10,12 +10,12 @@ export default function Home(){
 
      {lista.map((videos)=>
      <div className="video">
-        <p>{videos.}</p>
-        <p>{videos.}</p>
-        <p>{videos.}</p>
-        <p>{videos.}</p>
-        <p>{videos.}</p>
-        <p>{videos.}</p>
+        <p>{videos.nomeMusica}</p>
+        <p>{videos.descricao}</p>
+        <p>{videos.letra}</p>
+        <p>{videos.album}</p>
+        <p>{videos.nomeCantor}</p>
+        <p>{videos.?}</p>
         <p>{videos.id}</p>
 
      </div>
