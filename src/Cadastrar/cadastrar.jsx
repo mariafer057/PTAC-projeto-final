@@ -1,13 +1,14 @@
-/*import { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 export default function Cadastrar() {
-    const listaLocalStorage = JSON.parse(localStorage.getItem("Lista"));
-    const [lista, setLista ] = useState(listaLocalStorage   || []);
-   const [tipo, setTipo ] = useState("");
-   const [marca, setMarca ] = useState("");
-   const [preco, setPreco ] = useState("");
-   const [imagem, setImagem ] = useState("");
+    const listaLocalStorage = JSON.parse(localStorage.getItem("Lista"))  || [];
+    const [nome, setNome ] = useState(listaLocalStorage);
+   const [cantor, setCantor ] = useState("");
+   const [duracao, setDuracao ] = useState("");
+   const [estilo, setEstilo ] = useState("");
+   const [descricao, setDescricao ] = useState("");
+   const [album, setAlbum ] = useState("");
    const [id, setId] = useState(listaLocalStorage[listaLocalStorage.length - 1]?.id + 1 || 1);
 
    useEffect(() => {
@@ -17,10 +18,12 @@ export default function Cadastrar() {
         // e.preventDefault(); > previnir o comportamento
         e.preventDefault();
         setLista([...lista, {
-                tipo: tipo, 
-                marca:marca, 
-                preco: preco, 
-                imagem: imagem,
+                nome: nome, 
+                cantor:cantor, 
+                duracao: duracao, 
+                estilo: estilo,
+                descricao: descricao,
+                album: album,
                 id: id
         }]);
         setId(id + 1);
@@ -29,5 +32,5 @@ export default function Cadastrar() {
         setPreco("");
         setImagem("");
         console.log(id)
-    };/*
+    };
 //pegando do anterior
