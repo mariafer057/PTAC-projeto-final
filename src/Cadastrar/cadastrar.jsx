@@ -39,9 +39,45 @@ export default function Cadastrar() {
         setLink("");
 
     }
-    <p className="txt-input"><b>Escolha o tipo:</b></p>
-    <input value={tipo} type="text"
-    onChange={(e)=>{ setTipo(e.target.value)}}/>
+    <div className="botao">
+        <h1 className="titulo">Videos</h1>
+
+    <Link to="/">home</Link>
+
+        <form onSubmit={salvar}>
+
+        <p className="txt-input"><b>Nome da Musica</b></p>
+    <input value={nome} type="text"
+    onChange={(e)=>{ setNome(e.target.value)}}/>
+
+        <p className="txt-input"><b>Escolha o Cantor:</b></p>
+    <input value={cantor} type="text"
+    onChange={(e)=>{ setCantor(e.target.value)}}/>
+
+       <p className="txt-input"><b>Duração:</b></p>
+    <input value={duracao} type="text"
+    onChange={(e)=>{ setDuracao(e.target.value)}}/>
+
+           <p className="txt-input"><b>Estilo musical:</b></p>
+    <input value={estilo} type="text"
+    onChange={(e)=>{ setEstilo(e.target.value)}}/>
+
+       <p className="txt-input"><b>Descrição:</b></p>
+    <input value={descricao} type="text"
+    onChange={(e)=>{ setDescricao(e.target.value)}}/>
+
+<p className="txt-input"><b>Duração:</b></p>
+    <input value={album} type="text"
+    onChange={(e)=>{ setAlbum(e.target.value)}}/>
+
+<p className="txt-input"><b>Link do video:</b></p>
+    <input value={link} type="text"
+    onChange={(e)=>{ setlink(e.target.value)}}/>
+
+
+<button className="btn">ADD</button>   
+    </div>
+
 }
 
 

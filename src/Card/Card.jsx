@@ -12,6 +12,7 @@ export default function Card({videos}){
 
         <iframe width= "500" height= "300"src={`https://www.youtube.com/embed/${videos.link.slice(17)}`} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen></iframe>
 
+        
 
         </div>
         </div>

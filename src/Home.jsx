@@ -8,7 +8,7 @@ export default function Home(){
     return(
         <div>
          <Cabecalho/>
-        <h1></h1>
+        <h1>ola</h1>
 
         <Card videos={videos}/>
 </div>
