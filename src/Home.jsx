@@ -1,5 +1,7 @@
 import Cabecalho from './componentes/cabecalho';
+import Card from './Card/Card';
 import "./home.css"
+
 export default function Home(){
     return(
         <div>
@@ -9,18 +11,10 @@ export default function Home(){
      <h1>PTAC 2 - PROJETO FINAL</h1>
 
      {lista.map((videos)=>
-     <div className="video">
-        <p>{videos.nomeMusica}</p>
-        <p>{videos.descricao}</p>
-        <p>{videos.letra}</p>
-        <p>{videos.album}</p>
-        <p>{videos.nomeCantor}</p>
-        <p>{videos.?}</p>
-        <p>{videos.id}</p>
-
-     </div>
-     <iframe width= "500" height= "300"src="" frameborder="0"></iframe>
+     <Card videos={videos}/>
      )}
+
+     
 
         </div>
    

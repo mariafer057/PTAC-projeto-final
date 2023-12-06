@@ -9,6 +9,7 @@ export default function Cadastrar() {
    const [estilo, setEstilo ] = useState("");
    const [descricao, setDescricao ] = useState("");
    const [album, setAlbum ] = useState("");
+   const [link, link ] = useState("");
    const [id, setId] = useState(listaLocalStorage[listaLocalStorage.length - 1]?.id + 1 || 1);
 
    useEffect(() => {
@@ -24,13 +25,18 @@ export default function Cadastrar() {
                 estilo: estilo,
                 descricao: descricao,
                 album: album,
+                link: link,
                 id: id
         }]);
         setId(id + 1);
-        setTipo("");
-        setMarca("");
-        setPreco("");
-        setImagem("");
-        console.log(id)
+        setNome("");
+        setCantor("");
+        setDuracao("");
+        setEstilo("");
+        setDescricao("");
+        setAlbum("");
+        setLink("");
+
     };
+
 //pegando do anterior

@@ -2,7 +2,16 @@ import { useParams } from "react-router-dom";
 import Card from '../componentes/Card';
 
 export default function Detalhe(){
-    const {id} = useParams();
+    return(
+        <div><h1>olá</h1></div>
+    );
+}
+
+
+
+
+
+   /* const {id} = useParams();
     const lista = JSON.parse(localStorage.getItem("Lista"));
     console.log(lista);
 
@@ -17,6 +26,6 @@ export default function Detalhe(){
     return(
        <Card ativ={ativ[0]}></Card>
     );
-}
+}/*
 
 //ADD OS COMENTS PQ TA DANDO ERRO
