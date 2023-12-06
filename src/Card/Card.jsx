@@ -1,7 +1,6 @@
 export default function Card({videos}){
     return(
         <div>
-            <h1>{videos}</h1>
             <p>{videos.nome}</p>
             <p>{videos.cantor}</p>
             <p>{videos.duracao}</p>
