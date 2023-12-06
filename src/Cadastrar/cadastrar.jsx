@@ -39,6 +39,9 @@ export default function Cadastrar() {
         setLink("");
 
     }
+    <p className="txt-input"><b>Escolha o tipo:</b></p>
+    <input value={tipo} type="text"
+    onChange={(e)=>{ setTipo(e.target.value)}}/>
 }
 
 
