@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import Card from '../componentes/Card';
+import Card from '../Card/Card';
 
 export default function Detalhe(){
     return(
@@ -10,22 +10,3 @@ export default function Detalhe(){
 
 
 
-
-   /* const {id} = useParams();
-    const lista = JSON.parse(localStorage.getItem("Lista"));
-    console.log(lista);
-
-    const ativ = lista.filter((objeto) => {
-        if(objeto.id == id){
-            return objeto;
-        }
-        return null
-    })
-    console.log(ativ[0]);
-    
-    return(
-       <Card ativ={ativ[0]}></Card>
-    );
-}/*
-
-//ADD OS COMENTS PQ TA DANDO ERRO
