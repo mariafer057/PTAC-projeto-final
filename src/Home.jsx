@@ -3,8 +3,8 @@ import Card from './Card/Card';
 import "./home.css"
 
 export default function Home(){
-    const lista =  JSON.parse(localStorage.getItem("Lista")) 
-    console.log(lista)
+    const videos =  JSON.parse(localStorage.getItem("Lista")) || []
+    console.log(videos)
     return(
         <div>
          <Cabecalho/>

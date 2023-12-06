@@ -2,18 +2,15 @@ import { Link } from "react-router-dom"
 
 export default function Card({videos}){
     return(
-        lista.map((videos) =>
-        <div className="">
+        videos.map((video) =>
+        <div className="" key= {video.id}>
 
-        <div key= {videos.id}>
-        <Link to = {`/Detalhe/${videos.id}`}>
-            <h4>Detalhes:{videos.nome}</h4>
+        <div>
+        <Link to = {`/Detalhe/${video.id}`}>
+            <h4>Detalhes:{video.nome}</h4>
         </Link>
-
-        <iframe width= "500" height= "300"src={`https://www.youtube.com/embed/${videos.link.slice(17)}`} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen></iframe>
-
         
-
+        <iframe width= "500" height= "300"src={`https://www.youtube.com/embed/${video.link.slice(17)}`} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen></iframe>
         </div>
         </div>
         )
