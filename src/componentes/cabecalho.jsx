@@ -9,7 +9,6 @@ export default function Cabecalho(){
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-link active" aria-current="page" href="detalhe">Detalhes</a>
         <a class="nav-link" href="cadastrar">Cadastrar</a>
         <a class="nav-link" href="Destaque">Destaque</a>
       </div>
