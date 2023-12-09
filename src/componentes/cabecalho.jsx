@@ -10,6 +10,7 @@ export default function Cabecalho(){
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
         <a class="nav-link" href="cadastrar">Cadastrar</a>
+        <a class="nav-link" href="detalhe">Detalhe</a>
         <a class="nav-link" href="Destaque">Destaque</a>
       </div>
     </div>

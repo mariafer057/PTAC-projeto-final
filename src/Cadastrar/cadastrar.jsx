@@ -53,7 +53,7 @@ export default function Cadastrar() {
     <input value={nome} type="text"
     onChange={(e)=>{ setNome(e.target.value)}}/>
 
-        <p className="txt-input"><b>Escolha o Cantor:</b></p>
+        <p className="txt-input"><b>Cantor:</b></p>
     <input value={cantor} type="text"
     onChange={(e)=>{ setCantor(e.target.value)}}/>
 
@@ -69,7 +69,7 @@ export default function Cadastrar() {
     <input value={descricao} type="text"
     onChange={(e)=>{ setDescricao(e.target.value)}}/>
 
-<p className="txt-input"><b>Duração:</b></p>
+<p className="txt-input"><b>Letra da Música:</b></p>
     <input value={letraMsc} type="text"
     onChange={(e)=>{ setLetraMsc(e.target.value)}}/>
 

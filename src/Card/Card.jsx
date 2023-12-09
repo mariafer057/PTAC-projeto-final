@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 export default function Card({videos}){
     return(
         videos.map((video) =>
-        <div className="" key= {video.id}>
+        <div key= {video.id}>
 
         <div>
         <Link to = {`/Detalhe/${video.id}`}>
