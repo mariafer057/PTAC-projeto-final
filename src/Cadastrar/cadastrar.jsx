@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function Cadastrar() {
     const listaLocalStorage = JSON.parse(localStorage.getItem("Lista"))  || [];
@@ -8,13 +8,16 @@ export default function Cadastrar() {
    const [duracao, setDuracao ] = useState("");
    const [estilo, setEstilo ] = useState("");
    const [descricao, setDescricao ] = useState("");
-   const [album, setAlbum ] = useState("");
+   const [letraMsc, setLetraMsc ] = useState("");
    const [link, setlink ] = useState("");
    const [lista, setLista ] = useState("");
    const [id, setId] = useState(listaLocalStorage[listaLocalStorage.length - 1]?.id + 1 || 1);
 
    useEffect(() => {
     localStorage.setItem("Lista", JSON.stringify(lista));}, [lista]);
+
+    //importanda o modulo
+    const navigate = useNavigate() 
 
     const salvar =(e) =>{
         // e.preventDefault(); > previnir o comportamento
@@ -25,20 +28,22 @@ export default function Cadastrar() {
                 duracao: duracao, 
                 estilo: estilo,
                 descricao: descricao,
-                album: album,
+                letraMsc: letraMsc,
                 link: link,
                 id: id
         }]);
+        navigate("/");
         setId(id + 1);
         setNome("");
         setCantor("");
         setDuracao("");
         setEstilo("");
         setDescricao("");
-        setAlbum("");
+        setLetraMsc("");
         setLink("");
 
     }
+    return(
     <div className="botao">
         <h1 className="titulo">Videos</h1>
 
@@ -67,8 +72,8 @@ export default function Cadastrar() {
     onChange={(e)=>{ setDescricao(e.target.value)}}/>
 
 <p className="txt-input"><b>Duração:</b></p>
-    <input value={album} type="text"
-    onChange={(e)=>{ setAlbum(e.target.value)}}/>
+    <input value={letraMsc} type="text"
+    onChange={(e)=>{ setLetraMsc(e.target.value)}}/>
 
 <p className="txt-input"><b>Link do video:</b></p>
     <input value={link} type="text"
@@ -76,8 +81,9 @@ export default function Cadastrar() {
 
 
 <button className="btn">ADD</button>   
-    </div>
-
+    </form>
+</div>
+    );
 }
 
 
