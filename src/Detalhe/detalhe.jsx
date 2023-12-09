@@ -4,7 +4,6 @@ import Card from '../Card/Card';
 
 export default function Detalhe(){
 
-    const {id} useParams();
     const lista = JSON.parse(localStorage.getItem("Lista"));
 
     const video = lista.filter((objeto) => {

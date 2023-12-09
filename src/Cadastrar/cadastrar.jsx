@@ -3,13 +3,13 @@ import { Link, useNavigate } from "react-router-dom";
 
 export default function Cadastrar() {
     const listaLocalStorage = JSON.parse(localStorage.getItem("Lista"))  || [];
-    const [nome, setNome ] = useState(listaLocalStorage);
+    const [nome, setNome ] = useState("");
    const [cantor, setCantor ] = useState("");
    const [duracao, setDuracao ] = useState("");
    const [estilo, setEstilo ] = useState("");
    const [descricao, setDescricao ] = useState("");
    const [letraMsc, setLetraMsc ] = useState("");
-   const [link, setlink ] = useState("");
+   const [link, setLink ] = useState("");
    const [lista, setLista ] = useState("");
    const [id, setId] = useState(listaLocalStorage[listaLocalStorage.length - 1]?.id + 1 || 1);
 
@@ -17,7 +17,6 @@ export default function Cadastrar() {
     localStorage.setItem("Lista", JSON.stringify(lista));}, [lista]);
 
     //importanda o modulo
-    const navigate = useNavigate() 
 
     const salvar =(e) =>{
         // e.preventDefault(); > previnir o comportamento
@@ -32,7 +31,6 @@ export default function Cadastrar() {
                 link: link,
                 id: id
         }]);
-        navigate("/");
         setId(id + 1);
         setNome("");
         setCantor("");
@@ -77,7 +75,7 @@ export default function Cadastrar() {
 
 <p className="txt-input"><b>Link do video:</b></p>
     <input value={link} type="text"
-    onChange={(e)=>{ setlink(e.target.value)}}/>
+    onChange={(e)=>{ setLink(e.target.value)}}/>
 
 
 <button className="btn">ADD</button>   
